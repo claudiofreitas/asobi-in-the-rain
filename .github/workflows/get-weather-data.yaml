@@ -23,6 +23,6 @@ jobs:
           add: 'data.json'
           author_name: 'Claudio Freitas'
           author_email: 'claudiofreitas3@gmail.com'
-          branch: 'poc/github-actions-demo'
+          branch: 'main'
           default_author: user_info
           message: 'Update data.json'
