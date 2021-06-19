@@ -1,0 +1,20 @@
+{
+  "name": "asobi-in-the-rain",
+  "version": "1.0.0",
+  "repository": "git@github.com:claudiofreitas/asobi-in-the-rain.git",
+  "author": "Claudio Freitas <claudiofreitas3@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "get-weather-data": "ts-node get-weather-data.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "prettier": "^2.3.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
+}
