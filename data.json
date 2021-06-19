@@ -86,16 +86,13 @@
     "wind_gust": 8.46,
     "weather": [
       {
-        "id": 500,
-        "main": "Rain",
-        "description": "light rain",
-        "icon": "10d"
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04d"
       }
     ],
-    "pop": 0.74,
-    "rain": {
-      "1h": 0.17
-    }
+    "pop": 0.74
   },
   {
     "dt": 1624143600,
