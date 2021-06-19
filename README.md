@@ -1,2 +1,3 @@
-# asobi-in-the-rain
-遊び〜いん〜ザ・レイン
+# Asobi in the rain
+
+This repository aims to play with weather data and visualize it.
