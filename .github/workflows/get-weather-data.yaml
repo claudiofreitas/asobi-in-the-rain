@@ -1,0 +1,28 @@
+name: Get weather data
+on:
+  workflow_dispatch: # Empty body
+  push:
+    paths:
+      - .github/workflows/get-weather-data.yaml
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  Save-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - env:
+          OPEN_WEATHER_MAP_APPID: ${{ secrets.OPEN_WEATHER_MAP_APPID }}
+          LATITUDE: ${{ secrets.LATITUDE }}
+          LONGITUDE: ${{ secrets.LONGITUDE }}
+        run: yarn -s get-weather-data > data.json
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: 'data.json'
+          author_name: 'Claudio Freitas'
+          author_email: 'claudiofreitas3@gmail.com'
+          branch: 'poc/github-actions-demo'
+          default_author: user_info
+          message: 'Update data.json'
