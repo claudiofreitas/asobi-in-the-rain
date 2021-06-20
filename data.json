@@ -1,11 +1,11 @@
 [
   {
     "dt": 1624179600,
-    "temp": 25.99,
-    "feels_like": 25.99,
+    "temp": 25.66,
+    "feels_like": 25.98,
     "pressure": 1000,
-    "humidity": 63,
-    "dew_point": 18.41,
+    "humidity": 65,
+    "dew_point": 18.59,
     "uvi": 0.1,
     "clouds": 75,
     "visibility": 10000,
@@ -24,11 +24,11 @@
   },
   {
     "dt": 1624183200,
-    "temp": 26.01,
-    "feels_like": 26.01,
+    "temp": 25.6,
+    "feels_like": 25.99,
     "pressure": 1000,
-    "humidity": 66,
-    "dew_point": 19.17,
+    "humidity": 68,
+    "dew_point": 19.26,
     "uvi": 0,
     "clouds": 75,
     "visibility": 10000,
@@ -47,11 +47,11 @@
   },
   {
     "dt": 1624186800,
-    "temp": 25.62,
-    "feels_like": 25.96,
+    "temp": 25.29,
+    "feels_like": 25.62,
     "pressure": 1000,
-    "humidity": 66,
-    "dew_point": 18.8,
+    "humidity": 67,
+    "dew_point": 18.72,
     "uvi": 0,
     "clouds": 77,
     "visibility": 10000,
@@ -70,10 +70,10 @@
   },
   {
     "dt": 1624190400,
-    "temp": 25.07,
-    "feels_like": 25.41,
+    "temp": 24.82,
+    "feels_like": 25.16,
     "pressure": 1000,
-    "humidity": 68,
+    "humidity": 69,
     "dew_point": 18.75,
     "uvi": 0,
     "clouds": 80,
@@ -83,24 +83,21 @@
     "wind_gust": 3.36,
     "weather": [
       {
-        "id": 500,
-        "main": "Rain",
-        "description": "light rain",
-        "icon": "10n"
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
       }
     ],
-    "pop": 0.55,
-    "rain": {
-      "1h": 0.43
-    }
+    "pop": 0.55
   },
   {
     "dt": 1624194000,
-    "temp": 24.47,
-    "feels_like": 24.77,
+    "temp": 24.3,
+    "feels_like": 24.61,
     "pressure": 1001,
-    "humidity": 69,
-    "dew_point": 18.41,
+    "humidity": 70,
+    "dew_point": 18.48,
     "uvi": 0,
     "clouds": 90,
     "visibility": 10000,
@@ -122,11 +119,11 @@
   },
   {
     "dt": 1624197600,
-    "temp": 23.48,
-    "feels_like": 23.82,
+    "temp": 23.4,
+    "feels_like": 23.73,
     "pressure": 1002,
     "humidity": 74,
-    "dew_point": 18.58,
+    "dew_point": 18.5,
     "uvi": 0,
     "clouds": 95,
     "visibility": 10000,
