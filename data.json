@@ -1,11 +1,11 @@
 [
   {
     "dt": 1624186800,
-    "temp": 24.81,
-    "feels_like": 25.2,
+    "temp": 24.73,
+    "feels_like": 25.11,
     "pressure": 1001,
     "humidity": 71,
-    "dew_point": 19.2,
+    "dew_point": 19.12,
     "uvi": 0,
     "clouds": 77,
     "visibility": 10000,
@@ -27,11 +27,11 @@
   },
   {
     "dt": 1624190400,
-    "temp": 25,
-    "feels_like": 25.46,
+    "temp": 24.9,
+    "feels_like": 25.35,
     "pressure": 1001,
     "humidity": 73,
-    "dew_point": 19.82,
+    "dew_point": 19.73,
     "uvi": 0,
     "clouds": 75,
     "visibility": 10000,
@@ -50,11 +50,11 @@
   },
   {
     "dt": 1624194000,
-    "temp": 24.69,
-    "feels_like": 25.09,
+    "temp": 24.61,
+    "feels_like": 25.01,
     "pressure": 1001,
     "humidity": 72,
-    "dew_point": 19.31,
+    "dew_point": 19.23,
     "uvi": 0,
     "clouds": 80,
     "visibility": 10000,
@@ -73,11 +73,11 @@
   },
   {
     "dt": 1624197600,
-    "temp": 24.14,
-    "feels_like": 24.54,
+    "temp": 24.08,
+    "feels_like": 24.48,
     "pressure": 1001,
     "humidity": 74,
-    "dew_point": 19.22,
+    "dew_point": 19.16,
     "uvi": 0,
     "clouds": 85,
     "visibility": 10000,
@@ -86,24 +86,21 @@
     "wind_gust": 3.28,
     "weather": [
       {
-        "id": 500,
-        "main": "Rain",
-        "description": "light rain",
-        "icon": "10n"
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
       }
     ],
-    "pop": 0.68,
-    "rain": {
-      "1h": 0.98
-    }
+    "pop": 0.68
   },
   {
     "dt": 1624201200,
-    "temp": 23.36,
-    "feels_like": 23.74,
+    "temp": 23.32,
+    "feels_like": 23.69,
     "pressure": 1002,
     "humidity": 76,
-    "dew_point": 18.89,
+    "dew_point": 18.85,
     "uvi": 0,
     "clouds": 90,
     "visibility": 8333,
@@ -125,11 +122,11 @@
   },
   {
     "dt": 1624204800,
-    "temp": 22.75,
-    "feels_like": 23.09,
+    "temp": 22.73,
+    "feels_like": 23.07,
     "pressure": 1002,
     "humidity": 77,
-    "dew_point": 18.51,
+    "dew_point": 18.49,
     "uvi": 0,
     "clouds": 94,
     "visibility": 8577,
