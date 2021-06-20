@@ -4,8 +4,8 @@ on:
   push:
     paths:
       - .github/workflows/get-weather-data.yaml
-  schedule:
-    - cron: '*/15 * * * *'
+  #schedule:
+  #  - cron: '*/15 * * * *'
 jobs:
   Save-data:
     runs-on: ubuntu-latest
