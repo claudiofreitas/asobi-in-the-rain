@@ -29566,7 +29566,44 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"main.tsx":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"Svg.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react")); // 0 - 30 ---> 0 - 150
+// temp / 30 * 150
+
+
+var Svg = function (_a) {
+  var data = _a.data;
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("div", null, "Hello world!"), react_1.default.createElement("svg", {
+    width: 1000,
+    height: 150,
+    style: {
+      border: '1px dashed #ff0000'
+    }
+  }, react_1.default.createElement("g", null, data.map(function (p, i) {
+    return react_1.default.createElement("rect", {
+      fill: '#a9512f',
+      x: 20 + i * 25,
+      y: 150 - p.temperature / 30 * 150,
+      width: 20,
+      height: p.temperature / 30 * 150
+    });
+  })), react_1.default.createElement("g", null)));
+};
+
+exports.default = Svg;
+},{"react":"node_modules/react/index.js"}],"main.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -29583,9 +29620,164 @@ var react_1 = __importDefault(require("react"));
 
 var react_dom_1 = __importDefault(require("react-dom"));
 
+var Svg_1 = __importDefault(require("./Svg"));
+
 var root = document.getElementById('root');
-react_dom_1.default.render(react_1.default.createElement("div", null, "Hello world!"), root);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var myWeatherData = [{
+  time: 1623596400,
+  temperature: 23.39,
+  humidity: 70,
+  uvi: 0,
+  wind_speed: 4.39
+}, {
+  time: 1623600000,
+  temperature: 23.03,
+  humidity: 71,
+  uvi: 0,
+  wind_speed: 3.61
+}, {
+  time: 1623603600,
+  temperature: 22.66,
+  humidity: 72,
+  uvi: 0,
+  wind_speed: 2.55
+}, {
+  time: 1623607200,
+  temperature: 22.19,
+  humidity: 72,
+  uvi: 0,
+  wind_speed: 1.75
+}, {
+  time: 1623610800,
+  temperature: 21.56,
+  humidity: 76,
+  uvi: 0,
+  wind_speed: 1.04
+}, {
+  time: 1623614400,
+  temperature: 21.43,
+  humidity: 76,
+  uvi: 0.06,
+  wind_speed: 0.66
+}, {
+  time: 1623618000,
+  temperature: 21.78,
+  humidity: 73,
+  uvi: 0.35,
+  wind_speed: 0.7
+}, {
+  time: 1623621600,
+  temperature: 22.39,
+  humidity: 70,
+  uvi: 0.36,
+  wind_speed: 1.77
+}, {
+  time: 1623625200,
+  temperature: 23.04,
+  humidity: 66,
+  uvi: 0.75,
+  wind_speed: 1.79
+}, {
+  time: 1623628800,
+  temperature: 23.74,
+  humidity: 62,
+  uvi: 1.23,
+  wind_speed: 2.36
+}, {
+  time: 1623632400,
+  temperature: 24.4,
+  humidity: 60,
+  uvi: 1.6,
+  wind_speed: 3
+}, {
+  time: 1623636000,
+  temperature: 25,
+  humidity: 56,
+  uvi: 1.88,
+  wind_speed: 3.5
+}, {
+  time: 1623639600,
+  temperature: 25.66,
+  humidity: 52,
+  uvi: 1.93,
+  wind_speed: 3.67
+}, {
+  time: 1623643200,
+  temperature: 26.05,
+  humidity: 49,
+  uvi: 3.57,
+  wind_speed: 4.03
+}, {
+  time: 1623646800,
+  temperature: 26.57,
+  humidity: 46,
+  uvi: 2.78,
+  wind_speed: 4.45
+}, {
+  time: 1623650400,
+  temperature: 26.68,
+  humidity: 45,
+  uvi: 1.83,
+  wind_speed: 5.17
+}, {
+  time: 1623654000,
+  temperature: 26.47,
+  humidity: 47,
+  uvi: 1.22,
+  wind_speed: 5.55
+}, {
+  time: 1623657600,
+  temperature: 25.89,
+  humidity: 50,
+  uvi: 0.49,
+  wind_speed: 5.17
+}, {
+  time: 1623661200,
+  temperature: 25.04,
+  humidity: 57,
+  uvi: 0.12,
+  wind_speed: 5.1
+}, {
+  time: 1623664800,
+  temperature: 24.3,
+  humidity: 62,
+  uvi: 0,
+  wind_speed: 4.66
+}, {
+  time: 1623668400,
+  temperature: 23.49,
+  humidity: 68,
+  uvi: 0,
+  wind_speed: 5.45
+}, {
+  time: 1623672000,
+  temperature: 23.03,
+  humidity: 71,
+  uvi: 0,
+  wind_speed: 4.61
+}, {
+  time: 1623675600,
+  temperature: 22.75,
+  humidity: 72,
+  uvi: 0,
+  wind_speed: 4.31
+}, {
+  time: 1623679200,
+  temperature: 22.46,
+  humidity: 74,
+  uvi: 0,
+  wind_speed: 3.86
+}, {
+  time: 1623682800,
+  temperature: 22.2,
+  humidity: 75,
+  uvi: 0,
+  wind_speed: 3.14
+}];
+react_dom_1.default.render(react_1.default.createElement(Svg_1.default, {
+  data: myWeatherData
+}), root);
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Svg":"Svg.tsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29613,7 +29805,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57406" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
